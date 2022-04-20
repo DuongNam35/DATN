@@ -1,0 +1,68 @@
+version: "3.0"
+
+nlu:
+# chào hỏi
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - good afternoon
+
+# chào và hỏi tên
+- intent: greet_and_name
+  examples: |
+    - My name is [Nam](name)
+# chào  tạm biệt 
+- intent: goodbye
+  examples: |
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - see you again
+
+# xác nhận
+- intent: affirm
+  examples: |
+    - yes
+    - ok
+    - indeed
+    - of course
+    - that sounds good
+    - alright
+
+# phủ nhận
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+# hồ sơ
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+# product (sản phẩm cho khách muốn)
+- intent: need_products
+  examples: |
+    - I want to buy jeans
+    - I want to find shorts
+    - Do you sell pants?

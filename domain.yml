@@ -1,0 +1,29 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - need_products
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_ask_customers:
+  - text: "Can I help you with something?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa. Can I help you with something?"
+
+  utter_affirm:
+  - text: "ok"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
