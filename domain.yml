@@ -6,11 +6,25 @@ intents:
   - affirm
   - deny
   - bot_challenge
-  - need_products
+  - gave_name
+  - gave_live_place
+  - gave_age
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi! What you name ?"
+
+  utter_ask_name:
+  - text: What you name ?
+
+  utter_happy:
+  - text: How are you ?
+
+  utter_live_place:
+  - text: Where are you from
+
+  utter_ask_age:
+  - text: How old are you?
 
   utter_ask_customers:
   - text: "Can I help you with something?"
@@ -22,7 +36,9 @@ responses:
   - text: "I am a bot, powered by Rasa. Can I help you with something?"
 
   utter_affirm:
-  - text: "ok"
+  - text: "alright"
+
+
 
 session_config:
   session_expiration_time: 60

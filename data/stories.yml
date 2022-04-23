@@ -6,12 +6,18 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_ask_name
   - intent: bot_challenge
   - action: utter_iamabot
-  - intent: need_products
-  - action: utter_affirm
 
-- story: conversation one
+- story: conversation two
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_ask_name
+  - intent: gave_name
+  - action: utter_live_place
+  - intent: gave_live_place
+  - action: utter_ask_age
+  - intent: gave_age
+  - action: utter_affirm

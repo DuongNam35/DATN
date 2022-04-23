@@ -14,10 +14,6 @@ nlu:
     - let's go
     - good afternoon
 
-# chào và hỏi tên
-- intent: greet_and_name
-  examples: |
-    - My name is [Nam](name)
 # chào  tạm biệt 
 - intent: goodbye
   examples: |
@@ -61,8 +57,32 @@ nlu:
     - am I talking to a human?
 
 # product (sản phẩm cho khách muốn)
-- intent: need_products
+# - intent: need_products
+#   examples: |
+#     - I want to buy jeans
+#     - I want to find shorts
+#     - Do you sell pants?
+
+- intent: gave_name
   examples: |
-    - I want to buy jeans
-    - I want to find shorts
-    - Do you sell pants?
+    - I am Nam
+    - My name is Nam
+    - Nam
+    - Hung
+
+- intent: gave_live_place
+  examples: |
+    - I live on Tran Hung Dao Street
+    - I live in Viet TRi city
+    - I live in Ha Noi.
+    - I'm living in America
+    - Ha Noi
+    - Viet Nam
+    - America
+
+- intent: gave_age
+  examples: |
+    - Im 23
+    - 23 year old
+    - I am 12 year old
+    - I'm 20
