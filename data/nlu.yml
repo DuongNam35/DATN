@@ -56,19 +56,17 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-# product (sản phẩm cho khách muốn)
-# - intent: need_products
-#   examples: |
-#     - I want to buy jeans
-#     - I want to find shorts
-#     - Do you sell pants?
+- intent: gave_time_now
+  examples: |
+    - what time is it?
+    - got the time
+    - tell me the time
 
 - intent: gave_name
   examples: |
-    - I am Nam
     - My name is Nam
-    - Nam
-    - Hung
+    - I'm Hung
+    - I am Hoa
 
 - intent: gave_live_place
   examples: |
@@ -86,3 +84,59 @@ nlu:
     - 23 year old
     - I am 12 year old
     - I'm 20
+
+- intent: gave_infor_number
+  examples: |
+    - I have a sister
+    - I have a brother
+    - I have a younger brother
+    - I'm an only child
+    - I have no brothers or sisters
+    - I have on brother and two sister
+
+# Oh, Are your brothers older or younger?
+# Is your brother older or younger?
+
+- intent: gave_old_brother_sister
+  examples: |
+    - My brother 30 years younger than me.
+    - My brother is 30 years older than me.
+
+# what are their name ?
+# what are they called?
+
+- intent: gave_her_name
+  examples: |
+    - His name is Hoang
+    - Her name is Yen
+    - You can call him Nam
+    - You can call her Hoa
+
+# What are your parent's names?
+
+- intent: gave_parent_name
+  examples: |
+    - Their names are Hoa and Hung
+    - They are Hung and Hanh
+    - My father's is Thanh and my mother's name is Thanh
+    - You can call her Hoa
+
+# where does your parent work?
+
+- intent: gave_your_parent_work
+  examples: |
+    - My parent is Math teachers
+    - My parent are offce worker
+    - She works in a high school
+    - He works in a bank
+
+# What is your favorite thing to do as a family?
+# What do your family like to do the most? 
+
+- intent: gave_favorite
+  examples: |
+    - Watching TV together
+    - Going for a walk
+    - Planting new flower outside.
+    - Making dinner together.
+    - Cooking a special dinner

@@ -5,20 +5,74 @@ intents:
   - goodbye
   - affirm
   - deny
-  - bot_challenge
   - gave_name
+  - bot_challenge
   - gave_live_place
   - gave_age
+  - gave_infor_number
+  - gave_old_brother_sister
+  - gave_her_name
+  - gave_parent_name
+  - gave_your_parent_work
+  - gave_favorite
+  - gave_time_now
+  
+actions:
+ - action_give_time
+
+# entities:
+# - user_name
+# slots:
+#   user_name:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: from_entity
+#       entity: user_name
+#       conditions:
+#       - active_loop: user_name_form
+
+# forms:
+#   user_name_form:
+#     required_slots:
+#     - user_name
+
 
 responses:
   utter_greet:
-  - text: "Hi! What you name ?"
+  - text: "Hi!"
 
   utter_ask_name:
   - text: What you name ?
 
+  utter_surprised:
+  - text: Oh
+
   utter_happy:
   - text: How are you ?
+
+  utter_info_number:
+  - text: How many brother and sister do you have ?
+  - text: Do you have any siblings?
+
+  utter_old_brother_sister:
+  - text: Oh, Are your brothers older or younger?
+  - text: Is your brother older or younger?
+
+  utter_name_brother:
+  - text: what are their name ?
+  - text: what are they called?
+
+  utter_name_parent:
+  - text: What are your parent's names?
+
+  utter_parent_work:
+  - text: where does your parent work?
+
+  utter_favourite_family:
+  - text: What is your favorite thing to do as a family?
+  - text: What do your family like to do the most? 
+
 
   utter_live_place:
   - text: Where are you from
@@ -43,3 +97,4 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+

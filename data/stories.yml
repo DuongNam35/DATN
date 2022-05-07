@@ -7,6 +7,8 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_ask_name
+  - intent: gave_name
+  - action: utter_surprised
   - intent: bot_challenge
   - action: utter_iamabot
 
@@ -16,8 +18,61 @@ stories:
   - action: utter_greet
   - action: utter_ask_name
   - intent: gave_name
-  - action: utter_live_place
-  - intent: gave_live_place
-  - action: utter_ask_age
-  - intent: gave_age
-  - action: utter_affirm
+  - action: utter_surprised
+  - action: utter_happy
+
+- story: conversation three
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_name
+  - intent: gave_name
+  - action: utter_surprised
+  - action: utter_happy
+  - intent: affirm
+  - action: utter_info_number
+  - intent: gave_infor_number
+  - action: utter_old_brother_sister
+  - intent: gave_old_brother_sister
+  - action: utter_name_brother
+  - intent: gave_her_name
+  - action: utter_name_parent
+  - intent: gave_parent_name
+  - action: utter_parent_work
+  - intent: gave_your_parent_work
+  - action: utter_favourite_family
+  - intent: gave_favorite
+
+- story: conversation four
+  steps:
+  - intent: affirm
+  - action: utter_info_number
+  - intent: gave_infor_number
+  - action: utter_old_brother_sister
+  - intent: gave_old_brother_sister
+  - action: utter_name_brother
+  - intent: gave_her_name
+  - action: utter_name_parent
+  - intent: gave_parent_name
+  - action: utter_parent_work
+  - intent: gave_your_parent_work
+  - action: utter_favourite_family
+  - intent: gave_favorite
+
+- story: conversation fire
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: gave_time_now
+  - action: action_give_time
+
+
+  # - action: user_name_form
+  # - active_loop: user_name_form
+  # - slot_was_set:
+  #   - requested_slot: user_name
+  # - slot_was_set:
+  #   - user_name: Nam
+  # - slot_was_set:
+  #   - requested_slot: null
+  # - active_loop: null
